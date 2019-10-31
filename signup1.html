@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>log in</title>
+	<style>
+		button{
+			border:none;
+			padding: 12px;
+			background-color: green;
+			color: white;
+		}
+		button:hover{
+			cursor: pointer;
+		}
+		body{
+			background :black ;
+			background-size: cover;
+		}
+		th{border-color: transparent;
+			color: white;
+		}
+		td{
+			border-color: transparent;
+			color: white;
+		}
+		.al{
+           top: 50%;
+           left: 50%;
+
+		}
+		table{
+			position: fixed;
+			top: 10%;
+			left: 35%;
+			background-image: url(signup.jpg);
+			border-collapse: collapse;
+			background-size: cover;
+			border-color: rgb(255,255,255);
+
+		}
+		
+		
+		.ul{
+			font-size: 20px;
+			color:white;
+			font-weight: bold;
+		}
+		
+			
+		
+		
+	</style>
+	<link rel="stylesheet" href="lgin1.css">
+</head>
+<body style="background-image: url(signup12.jpg);">
+	<div class="topnav">
+  <a class="logo" href="toolbar.html"><img src="logo.png" height="22" width="200" alt="TO-TOOR" ></a>
+ <a class="active" href="signup1.html">Signup</a>  
+ <a  href="login1.html">Login</a>
+ <a  href="toolbar.html">Home</a>
+  
+</div>
+	<div class="al">
+<table align="center" height="75%" border="3" cellspacing="5" cellpadding="15">
+	<form name="ree">
+		<tr>
+			<td colspan="2">
+				&nbsp
+			</td>
+		</tr>
+		<tr>
+			<th colspan="2" class="ul"><u>Signup</u></th>
+		</tr>
+		<tr>
+			<td><b>
+				Name:</b>
+			</td>
+			<td>
+			<input type="text" name="Username" placeholder="Enter User name" required pattern="[A-Za-z]{4,}" title="Username should greater than 4 character .">
+		    </td>
+		</tr>
+		<tr>
+			<td><b>E-Mail ID:</b></td>
+			<td><input type="text" name="E-Mail" placeholder="Enter E-Mail ID" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}" title="XXXXXXX123@gmail.com" required></td>
+		</tr>
+		<tr>
+			<td>
+				<b>Password:</b>
+			</td>
+			<td>
+				<input type="Password" name="pass" placeholder="Enter Password" required
+				pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				
+					<input type="checkbox" name=".." required>Agree to 
+				<a href="#tc" style="color: white; font-weight: bold;font-size: 15px;">terms and conditions</a>
+			</td>
+			
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><button onclick="rev()"><font size="5">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Signup &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</font></button></td>
+		</tr>
+		
+		<tr>
+			<td colspan="2" >
+				<button style="background-color: red"> <a href="toolbar.html" style="text-decoration: none;
+			color:white;
+			size: 5px;" > &nbsp Cancel &nbsp</a></button>
+			</td>
+			
+		</tr>
+		<tr>
+			<td colspan="2"><a href="login1.html" style="text-decoration: none;
+			color:white;
+			size: 5px; float: right;">  Have An Account ?</a></td>
+		</tr>
+		
+	</form>
+</table>
+</div>
+<script>
+function rev() {
+	 var x=document.forms['ree']['Username'].value;
+	 var y=document.forms['ree']['pass'].value;
+	 if(x==''||y==''||x==' '||y==' ')
+	 {
+
+	 }
+	 else
+	 {
+	 	alert('LogedIn succeafully Thanks for be with us !!')
+	 }
+	}
+</script>
+</body>
+</html>

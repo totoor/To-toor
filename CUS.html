@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CU</title>
+	<style >
+		.white{
+			color: white;
+
+		}
+		.po{
+
+			position: relative;
+			top: 30%;
+			left: 40%;
+			padding: 20px;
+			
+		}
+		.fl{
+			height:  40px;
+			width: 300px;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="toolbar.css">
+	<link rel="stylesheet" type="text/css" href="bottnav.css">
+	 <link rel="stylesheet" href="offdis.css"> 
+
+</head>
+<body bgcolor="#545151" class="white" style="background-image: url(abbac.png); background-size: cover;">
+	<div class="topnav">
+ <a class="logo" href="toolbar.html"><img src="logo.png" height="22" width="200" alt="TO-TOOR" ></a>
+ <a href="signup1.html">Signup</a>  
+ <a href="login1.html">Login</a>
+ <a href="toolbar.html">Home</a>
+</div>
+
+<h1 align="center">Contact Us</h1>
+<hr><hr><br><br>
+
+
+<br><hr>
+<div class="po">
+<form name="ree">
+	<h3>Contact Us Through This </h3>
+	FIRST NAME:<br><br><input class="fl" type="text" name="no" placeholder="Enter your first name .." required><br><br>
+	SECOND NAME:<br><br><input class="fl" type="text" name="nos" placeholder="Enter your Second name .." required><br><br>
+	COUNTRY:<br><br><select class="fl" required><option>CHENNAI</option><option>MUMBAI</option><option>DELHI</option></select><br><br>
+    SUBJECT:<br><br><textarea placeholder="write somethinh...." style="height:100px; width: 300px"></textarea><br><br>
+    <input style="background-color: green; font-size: 20px;color: white;border:none; " class="fl" type="submit" name="send" onclick="rev()" value="send">
+
+</form>
+<br>
+</div>
+<br><hr>
+<h4 align="center">ADDRESS</h4>
+<h2 align="center"><p align="left" style="padding-left:  500px"><font size="2px" > To Toor India pvt. Ltd &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp TOLL FREE:<br>ABC building N0.10 TOWER C &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  1800-000-000<br>ABC Marvel city,ABC Phase 4<br>Coming 20,Black,Serbia 152020,<br>India</font></p>
+</h2>
+<div class="footer">
+ <a href="about.html"><b>ABOUT US</b></a>
+  <a href="feba.html"><b>FeedBack</b></a>
+  <a href="#about"><b>Facebook</b></a>
+  <a href="#about"><b>Instagram</b></a>
+  <a href="#about"><b>Twitter</b></a>
+  <a href="FAQ.html"><b>FAQ</b></a>
+  <a class="active"  href="CUS.html" class="active"><b>Contact Us</b></a>
+</div>
+<script>
+	function rev() {
+		var x=document.forms['ree']['no'].value;
+		var y=document.forms['ree']['nos'].value;
+		if(x==''||y==''||x==' '||y==' ')
+		{
+			alert('Please Fill Up The Form')
+		}
+		else{
+					alert('Thanks For Your Feedback :) ');
+
+		}
+	}
+</script>
+</body>
+</html>

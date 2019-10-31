@@ -1,0 +1,33 @@
+<div class="ord"><button onclick="document.getElementById('id01').style.display='block'" style="background-color: red; width:auto;">Book Now</button></div>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+   
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>E-mail ID</b></label>
+      <input type="text" placeholder="Enter E-mail Id" name="mail" required>
+      <p>Number of Members :</p>
+       <label for="psw"><b>Adults(18-45)</b></label>
+      <input type="text" placeholder="Enter Members" name="ad" required> 
+       <label for="psw"><b>Childs(0-17)</b></label>
+      <input type="text" placeholder="Enter Members" name="child" required> 
+      <label for="psw"><b>Olds(45+)</b></label>
+      <input type="text" placeholder="Enter Members" name="old" required> 
+      <button type="submit">Book Now</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> accepted to the terms and condition
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>

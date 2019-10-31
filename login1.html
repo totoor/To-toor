@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>log in</title>
+	<style>
+		button{
+			border:none;
+			padding: 12px;
+			background-color: green;
+			color: white;
+		}
+		button:hover{
+			cursor: pointer;
+		}
+		body{
+			background :black ;
+			background-size: cover;
+		}
+		th{border-color: transparent;
+			color: white;
+		}
+		td{
+			border-color: transparent;
+			color: white;
+		}
+		.al{
+           top: 50%;
+           left: 50%;
+
+		}
+		table{
+			position: fixed;
+			top: 15%;
+			left: 35%;
+			background-image: url(bgimglin.jpg);
+			border-collapse: collapse;
+			background-size: cover;
+			border-color: rgb(255,255,255);
+
+		}
+		
+		
+		.ul{
+			font-size: 20px;
+			color:white;
+			font-weight: bold;
+		}
+		
+			
+		
+		
+	</style>
+	<link rel="stylesheet" href="lgin1.css">
+</head>
+<body style="background-image: url(login12.jpg);">
+	<div class="topnav">
+  <a class="logo" href="toolbar.html"><img src="logo.png" height="22" width="200" alt="TO-TOOR" ></a>
+ <a href="signup1.html">Signup</a>  
+ <a class="active" href="login1.html">Login</a>
+ <a  href="toolbar.html">Home</a>
+  
+</div>
+	<div class="al">
+<table align="center" height="75%" border="3" cellspacing="5" cellpadding="15">
+	<form name="ree">
+		<tr>
+			<td colspan="2">
+				&nbsp
+			</td>
+		</tr>
+		<tr>
+			<th colspan="2" class="ul"><u>USER LOGIN</u></th>
+		</tr>
+		<tr>
+			<td><b>
+				Name:</b>
+			</td>
+			<td>
+			<input type="text" name="Username" placeholder="Enter User name" required pattern="[A-Za-z]{4,}" title="characters(greater than 4) only allowed ">
+		    </td>
+		</tr>
+		<tr>
+			<td>
+				<b>Password:</b>
+			</td>
+			<td>
+				<input type="Password" name="pass" placeholder="Enter Password" required pattern="{2,}" title="Password Must Required">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><button onclick="rev()"><font size="5" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Login &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</font></button></td>
+		</tr>
+		<tr>
+			<td >
+				<button style="background-color: red"> <a href="toolbar.html" style="text-decoration: none;
+			color:white;
+			size: 5px;" > &nbsp cancel &nbsp</a></button>
+			</td>
+			<td style="float: right;">
+				<a href="#fp" style="color: white; font-weight: bold;font-size: 15px;">Forget Password?</a>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2"><a href="signup1.html" style="text-decoration: none;
+			color:white;
+			size: 5px;"> Don't Have An Account ?</a></td>
+		</tr>
+		<tr>
+			<td colspan="2"><button><a href="signup1.html" style="text-decoration: none;
+			color:white;
+			size: 5px;" > &nbsp SignUp &nbsp</a></button></td>
+		</tr>
+	</form>
+</table>
+</div>
+<script>
+	function rev() {
+	 var x=document.forms['ree']['Username'].value;
+	 var y=document.forms['ree']['pass'].value;
+	 if(x==''||y==''||x==' '||y==' ')
+	 {
+
+	 }
+	 else
+	 {
+	 	alert('LogedIn succeafully Thanks for be with us !!')
+	 }
+	}
+</script>
+</body>
+</html>

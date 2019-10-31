@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hdhd</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+	<link rel="stylesheet" href="bottnav.css">
+    <link rel="stylesheet" href="offdis.css"> 
+    <link rel="stylesheet"  href="toolbar.css">
+</head>
+<body style="background-image: url(feed.jpg); background-size: cover;">
+<div class="topnav">
+ <a class="logo" href="toolbar.html"><img src="logo.png" height="22" width="200" alt="TO-TOOR" ></a>
+ <a href="signup1.html">Signup</a>  
+ <a href="login1.html">Login</a>
+ <a  href="toolbar.html">Home</a>
+</div>
+<div class="fc">
+	<div class="al">
+		<form name="ree">
+	<h1>Feedback</h1>
+	<p>please provide your feedback below:</p><br>
+	<p><b>How do you rate your overall experience ?</b></p>
+	<input type="radio" name="bad">Bad <input type="radio" name="avg">Average<input  type="radio" name="gd">Good
+	<br>
+    <p><b>Comments:</b></p><br><textarea class="w" style="height: 100px;" placeholder="your Comments"></textarea><br>
+    <p><b>Your Name:</b></p><br><input class="w" style="height:25px;" type="text" name="yn" required pattern="[A-Za-z]{3,}"><br>
+    <p><b>E-mail</b></p><br><input class="w" style="height:25px;" type="text" name="em" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}" title="XXXXXXX123@gmail.com" required>
+    <br><br><p align="center"><button   style="color:white ;border:none; background-color: green; width: 100px; height:45px;" onclick="rev()" >Post</button></p></form></div>
+</div>
+<script>
+	function rev() {
+		var x=document.forms['ree']['yn'].value;
+		var y=document.forms['ree']['em'].value;
+		if(x==''||y==''||x==' '||y==' ')
+		{
+			alert('Please Fill Up The Form')
+		}
+		else{
+					alert('Thanks For Your Feedback :) ');
+
+		}
+	}
+</script>
+</body>
+</html>

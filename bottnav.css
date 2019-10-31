@@ -1,0 +1,20 @@
+
+.footer{
+	bottom: 10%;
+	padding:10px;
+	text-align: center;
+	background-color: darkgrey ;
+}
+.footer a{
+	float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-color:black;
+}
+.footer a:hover{
+	background-color: black;
+	
+}
